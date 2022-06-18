@@ -1,0 +1,124 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: hsl(0, 100%, 74%) ;
+  background-image: url("img/bg-intro-desktop.png");
+  color: white;
+}
+
+.flex-container {
+    padding: 3%;
+    width: 80%;
+    margin: auto;
+    gap: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.right > p{
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.right > h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header {
+    background-color: hsl(248, 32%, 49%);
+    padding: 10px;
+    text-align: center;
+    width: 520px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+
+form  {
+    background-color: white;
+    padding: 15px; 
+    height: 400px;
+    width: 515px;
+    border-radius: 7px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+form > div {
+    padding: 10px;
+}
+
+input {
+    width: 25rem;
+    height: 30px;
+    border: 1px solid rgb(161, 157, 157);
+    border-radius: 7px;
+    padding: 10px; 
+    margin: auto;
+    color: hsl(249, 10%, 26%);
+    font-weight: 700;
+}
+input:required:invalid {
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    background-image: url('img/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+input:required:after {
+    content:"cannot be empty ";
+    color: red;
+}
+.btn {
+    text-align: center;
+    width: 27rem;
+    height: 50px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-size: 1rem;
+}
+
+.text {
+    color:  hsl(246, 25%, 77%);
+    font-size: 15px;
+}
+
+span {
+    color: hsl(0, 100%, 74%) ;
+}
+
+
+@media screen and (max-width:375px){
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        padding: 10px;
+        width: 320px;
+        height: 50px;
+    }
+    form  { 
+        height: 450px;
+        width: 300px;
+    }
+    input {
+        width: 15rem;
+        height: 30px;
+    }
+    .btn {
+        text-align: center;
+    width: 17rem;
+    height: 50px;
+    }
+} 
+
